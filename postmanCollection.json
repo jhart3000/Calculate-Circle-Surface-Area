@@ -1,0 +1,32 @@
+{
+  "info": {
+    "_postman_id": "f440c200-d301-4770-8129-80dc44ce6042",
+    "name": "Calculate Circle Surface Area",
+    "description": "This collection contains a GET API that calculates the surface area of a circle based on the inputted radius.\r\n\r\nThe {radius} path param in the url must be replaced with a valid double for the api to function correctly",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "CalculateSurfaceArea",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/calculateSurfaceArea/radius/{radius}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "calculateSurfaceArea",
+            "radius",
+            "{radius}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
