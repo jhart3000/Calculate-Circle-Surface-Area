@@ -27,4 +27,10 @@ class CalculateSurfaceAreaIT {
         .andExpect(jsonPath("$.surfaceAreaValue", Matchers.is(3.14)))
         .andExpect(jsonPath("$.unit", Matchers.is("meters squared")));
   }
+
+  @Test
+  void shouldReturnBadRequest() throws Exception {
+    mvc.perform(get("/calculateSurfaceArea/radius/one"))
+            .andExpect(status().isBadRequest());
+  }
 }
